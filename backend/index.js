@@ -654,7 +654,11 @@ class SMXLiveBoardServer {
             this.app.use(morgan('dev'));
         }
         
-        this.app.use(cors());
+        // CORS restrito ao domínio autorizado
+        this.app.use(cors({
+            origin: process.env.CORS_ORIGIN || 'http://10.8.162.172/',
+            credentials: true
+        }));
         this.app.use(express.json({ limit: '5mb' })); // Reduzido de 10mb
         this.app.use(express.urlencoded({ extended: true, limit: '5mb' }));
         
