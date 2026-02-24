@@ -564,7 +564,8 @@ class SMXLiveBoard {
             
             // Tentar conectar ao Socket.IO primeiro (servidor principal na porta 3002)
             if (typeof io !== 'undefined') {
-                this.socket = io('http://10.8.162.172:3002', {
+                const apiUrl = window?.FRONTEND_API_URL || 'http://10.8.162.172:3002';
+                this.socket = io(apiUrl, {
                     // Configurações de reconexão otimizadas para estabilidade
                     reconnection: true,
                     reconnectionDelay: 2000,        // 2 segundos (mais conservador)
@@ -747,7 +748,8 @@ class SMXLiveBoard {
     async fetchSystemData() {
         try {
             // Tentar apenas o servidor principal (porta 3002)
-            const response = await fetch('http://10.8.162.172:3002/api/system/metrics');
+            const apiUrl = window?.FRONTEND_API_URL || 'http://10.8.162.172:3002';
+            const response = await fetch(apiUrl + '/api/system/metrics');
             
             if (response.ok) {
                 const data = await response.json();
