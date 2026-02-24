@@ -1,6 +1,6 @@
 @echo off
 echo ========================================
-echo    SMX LiveBoard - Configurar smx:3000
+echo    SMX LiveBoard - Configurar smx:3002
 echo ========================================
 echo.
 echo Este script vai configurar o alias 'smx' para localhost
@@ -23,7 +23,7 @@ echo.
 echo ✅ Configurado com sucesso!
 echo.
 echo Agora você pode acessar:
-echo http://smx:3000
+echo http://smx:3002
 echo.
 echo Para remover, execute: remove-smx-host.bat
 echo.

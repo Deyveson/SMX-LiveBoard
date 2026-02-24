@@ -1,6 +1,6 @@
 @echo off
 echo ========================================
-echo    SMX LiveBoard - Remover smx:3000
+echo    SMX LiveBoard - Remover smx:3002
 echo ========================================
 echo.
 echo Este script vai remover o alias 'smx' do arquivo hosts
@@ -25,6 +25,6 @@ if exist "%SystemRoot%\System32\drivers\etc\hosts.backup" (
 )
 
 echo.
-echo Agora use apenas: http://localhost:3000
+echo Agora use apenas: http://localhost:3002
 echo.
 pause

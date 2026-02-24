@@ -105,7 +105,7 @@ npm start
 
 ### 4. **Acesse no Navegador**
 ```
-http://localhost:3000
+http://localhost:3002
 ```
 
 ## 🎯 Uso Detalhado
@@ -221,7 +221,7 @@ SMX-LiveBoard/
 
 ```bash
 # Servidor
-PORT=3000
+PORT=3002
 NODE_ENV=production
 
 # Telegram

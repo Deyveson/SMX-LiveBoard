@@ -70,7 +70,7 @@
 ### 3. **Configurar no SMX LiveBoard**
 
 #### **Via Interface Web**
-1. **Acesse** `http://localhost:3000`
+1. **Acesse** `http://localhost:3002`
 2. **Vá para** a seção de configurações
 3. **Preencha**:
    - **Bot Token**: Token do BotFather
@@ -79,7 +79,7 @@
 
 #### **Via API**
 ```bash
-curl -X POST http://localhost:3000/api/telegram/configure \
+curl -X POST http://localhost:3002/api/telegram/configure \
   -H "Content-Type: application/json" \
   -d '{
     "botToken": "1234567890:ABCdefGHIjklMNOpqrsTUVwxyz",
@@ -287,7 +287,7 @@ const alertThresholds = {
 #### **Bot não envia mensagens**
 ```bash
 # Verificar configuração
-curl http://localhost:3000/api/telegram/test
+curl http://localhost:3002/api/telegram/test
 
 # Verificar logs
 tail -f backend/logs/system.log | grep telegram
@@ -321,12 +321,12 @@ grep "telegram" backend/logs/system.log
 ### **Teste Manual**
 ```bash
 # Testar envio de mensagem
-curl -X POST http://localhost:3000/api/telegram/send \
+curl -X POST http://localhost:3002/api/telegram/send \
   -H "Content-Type: application/json" \
   -d '{"message": "Teste de conexão"}'
 
 # Testar alerta
-curl -X POST http://localhost:3000/api/telegram/alert \
+curl -X POST http://localhost:3002/api/telegram/alert \
   -H "Content-Type: application/json" \
   -d '{
     "alertType": "CPU",

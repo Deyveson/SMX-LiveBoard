@@ -11,7 +11,7 @@ for /f "tokens=2 delims=:" %%a in ('ipconfig ^| findstr /c:"IPv4"') do (
         echo Seu IP local: %%b
         echo.
         echo Para acessar o SMX LiveBoard:
-        echo http://%%b:3000
+        echo http://%%b:3002
         echo.
     )
 )

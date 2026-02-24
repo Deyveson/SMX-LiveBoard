@@ -3,16 +3,16 @@ echo ========================================
 echo    SMX LiveBoard - Iniciando Servidor
 echo ========================================
 echo.
-echo Iniciando servidor web na porta 3000...
+echo Iniciando servidor web na porta 3002...
 echo.
 echo Para acessar o dashboard, use qualquer uma das opcoes:
 echo.
-echo 1. http://localhost:3000
-echo 2. http://127.0.0.1:3000
-echo 3. http://smx:3000 (se configurado)
-echo 4. http://SEU-IP-LOCAL:3000
+echo 1. http://localhost:3002
+echo 2. http://127.0.0.1:3002
+echo 3. http://smx:3002 (se configurado)
+echo 4. http://SEU-IP-LOCAL:3002
 echo.
-echo Para configurar http://smx:3000:
+echo Para configurar http://smx:3002:
 echo Execute como Admin: setup-smx-host.bat
 echo.
 echo Para instalar como PWA (App):

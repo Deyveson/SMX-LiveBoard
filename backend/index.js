@@ -95,7 +95,7 @@ class SMXLiveBoardServer {
             }
         });
         
-        this.port = process.env.PORT || 3000;
+        this.port = process.env.PORT || 3002;
         this.isProduction = process.env.NODE_ENV === 'production';
         
         // Inicializar logger HTTP personalizado

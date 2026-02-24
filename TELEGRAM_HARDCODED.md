@@ -86,7 +86,7 @@ Para alterar os tokens, edite diretamente o arquivo `backend/index.js`:
 
 ### 1. **Verificar Status**
 ```bash
-curl http://localhost:3000/api/telegram/status
+curl http://localhost:3002/api/telegram/status
 ```
 
 **Resposta:**
@@ -99,14 +99,14 @@ curl http://localhost:3000/api/telegram/status
 
 ### 2. **Enviar Mensagem**
 ```bash
-curl -X POST http://localhost:3000/api/telegram/send \
+curl -X POST http://localhost:3002/api/telegram/send \
   -H "Content-Type: application/json" \
   -d '{"message": "Teste de mensagem"}'
 ```
 
 ### 3. **Enviar Alerta**
 ```bash
-curl -X POST http://localhost:3000/api/telegram/alert \
+curl -X POST http://localhost:3002/api/telegram/alert \
   -H "Content-Type: application/json" \
   -d '{
     "alertType": "SYSTEM_STATUS",
@@ -117,7 +117,7 @@ curl -X POST http://localhost:3000/api/telegram/alert \
 
 ### 4. **Testar Conexão**
 ```bash
-curl http://localhost:3000/api/telegram/test
+curl http://localhost:3002/api/telegram/test
 ```
 
 ## 🔄 Reversão (Se Necessário)

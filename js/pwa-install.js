@@ -117,8 +117,8 @@ class PWAInstallManager {
                     <h3 style="color: #00d4ff; margin-bottom: 16px;">📱 Instalar SMX LiveBoard</h3>
                     <p style="color: #fff; margin-bottom: 12px;">Para instalar como PWA, use uma das URLs confiáveis:</p>
                     <div style="background: rgba(0, 212, 255, 0.1); padding: 12px; border-radius: 8px; margin: 12px 0;">
-                        <p style="color: #00d4ff; font-weight: 600; margin: 4px 0;">✅ http://localhost:3000</p>
-                        <p style="color: #00d4ff; font-weight: 600; margin: 4px 0;">✅ http://127.0.0.1:3000</p>
+                        <p style="color: #00d4ff; font-weight: 600; margin: 4px 0;">✅ http://localhost:3002</p>
+                        <p style="color: #00d4ff; font-weight: 600; margin: 4px 0;">✅ http://127.0.0.1:3002</p>
                     </div>
                     <p style="color: #aaa; font-size: 0.9rem;">Depois acesse uma dessas URLs e o modal de instalação aparecerá automaticamente.</p>
                 </div>
@@ -132,7 +132,7 @@ class PWAInstallManager {
                         <p style="color: #ffaa00; font-weight: 600; margin: 4px 0;">⚠️ URL atual: ${currentOrigin}</p>
                         <p style="color: #ffaa00; font-weight: 600; margin: 4px 0;">⚠️ Não é uma origem confiável para PWA</p>
                     </div>
-                    <p style="color: #aaa; font-size: 0.9rem;">Use localhost:3000 ou configure HTTPS para instalar como PWA.</p>
+                    <p style="color: #aaa; font-size: 0.9rem;">Use localhost:3002 ou configure HTTPS para instalar como PWA.</p>
                 </div>
             `;
         }

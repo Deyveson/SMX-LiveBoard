@@ -220,7 +220,7 @@ body::before {
 .logo-icon {
   width: 32px;
   height: 32px;
-  background: linear-gradient(45deg, #00d4ff, #0099cc);
+  background: #ffffff;
   border-radius: 8px;
   display: flex;
   align-items: center;
