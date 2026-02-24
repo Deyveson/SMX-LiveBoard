@@ -612,7 +612,6 @@ body::before {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  max-width: 32px;
 }
 
 .footer-icon {
