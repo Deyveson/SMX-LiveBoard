@@ -595,7 +595,7 @@ body::before {
 }
 
 .footer-content {
-  max-width: 1200px;
+  max-width: 32px;
   margin: 0 auto;
   padding: 0 1rem;
   display: flex;
