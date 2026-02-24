@@ -47,7 +47,7 @@ class SpeedTest {
             // Limpar status após 3 segundos
             setTimeout(() => {
                 this.updateStatus('', '');
-            }, 3000);
+            }, 3002);
         }
     }
 
@@ -372,7 +372,7 @@ function startSpeedTest() {
                     button.classList.remove('success');
                     button.title = 'Teste de Velocidade';
                 }
-            }, 3000);
+            }, 3002);
                 
         }).catch((error) => {
             console.error('Erro no teste de velocidade:', error);
@@ -395,10 +395,10 @@ function startSpeedTest() {
                     button.classList.remove('error');
                     button.title = 'Teste de Velocidade';
                 }
-            }, 3000);
+            }, 3002);
         });
     } else {
-        toastManager.show('error', 'Erro', 'Sistema não disponível. Tente novamente em alguns segundos.', 3000);
+        toastManager.show('error', 'Erro', 'Sistema não disponível. Tente novamente em alguns segundos.', 3002);
     }
 }
 
@@ -562,9 +562,9 @@ class SMXLiveBoard {
                 return;
             }
             
-            // Tentar conectar ao Socket.IO primeiro (servidor principal na porta 3000)
+            // Tentar conectar ao Socket.IO primeiro (servidor principal na porta 3002)
             if (typeof io !== 'undefined') {
-                this.socket = io('http://localhost:3000', {
+                this.socket = io('http://localhost:3002', {
                     // Configurações de reconexão otimizadas para estabilidade
                     reconnection: true,
                     reconnectionDelay: 2000,        // 2 segundos (mais conservador)
@@ -746,8 +746,8 @@ class SMXLiveBoard {
     // Fallback para API REST
     async fetchSystemData() {
         try {
-            // Tentar apenas o servidor principal (porta 3000)
-            const response = await fetch('http://localhost:3000/api/system/metrics');
+            // Tentar apenas o servidor principal (porta 3002)
+            const response = await fetch('http://localhost:3002/api/system/metrics');
             
             if (response.ok) {
                 const data = await response.json();

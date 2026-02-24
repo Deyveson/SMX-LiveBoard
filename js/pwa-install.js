@@ -74,10 +74,10 @@ class PWAInstallManager {
     isTrustedOrigin() {
         const origin = window.location.origin;
         const trustedOrigins = [
-            'http://localhost:3000',
-            'http://127.0.0.1:3000',
-            'https://localhost:3000',
-            'https://127.0.0.1:3000'
+            'http://localhost:3002',
+            'http://127.0.0.1:3002',
+            'https://localhost:3002',
+            'https://127.0.0.1:3002'
         ];
         
         // Para desenvolvimento local, sempre permitir

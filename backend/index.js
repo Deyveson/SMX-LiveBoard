@@ -12,7 +12,7 @@ const HttpLogger = require('./utils/httpLogger');
 // Configurações padrão do sistema
 const config = {
     NODE_ENV: process.env.NODE_ENV || 'development',
-    PORT: process.env.PORT || 3000,
+    PORT: process.env.PORT || 3002,
     METRICS_INTERVAL: process.env.METRICS_INTERVAL || 10000,
     PROCESSES_INTERVAL: process.env.PROCESSES_INTERVAL || 60000,
     SERVICES_INTERVAL: process.env.SERVICES_INTERVAL || 30000,
